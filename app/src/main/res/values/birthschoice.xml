@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="berthchoice">
+        <item>Choose Berth</item>
+        <item>Upper Berth</item>
+        <item>Lower Berth</item>
+        <item>Middle Berth</item>
+        <item>Side Upper</item>
+        <item>Side Lower</item>
+
+    </array>
+</resources>

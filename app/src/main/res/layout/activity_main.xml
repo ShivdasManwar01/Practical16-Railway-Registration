@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/head"
+        android:text="Tour Registration"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="60dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/name"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/phoneno"
+        android:inputType="number"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:hint="Phone"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/berths"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/phoneno"
+        android:entries="@array/berthchoice"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a Destination"
+        android:layout_below="@id/berths"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tourhead"
+        android:layout_marginStart="60dp"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tourhead"
+        android:orientation="horizontal"
+        android:id="@+id/destinations"
+
+        android:layout_centerHorizontal="true"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sangali"
+            android:text="Sangali"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pune"
+            android:text="Pune"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mumbai"
+            android:text="Mumbai"
+            />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select meal"
+        android:id="@+id/locationhead"
+        android:textSize="20dp"
+        android:layout_below="@+id/destinations"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:id="@+id/veg"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationhead"
+        android:text="Veg"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/veg"
+        android:id="@+id/non_veg"
+        android:text="Non-veg"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/non_veg"
+        android:backgroundTint="@color/black"
+        android:id="@+id/register"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
